@@ -115,6 +115,39 @@
                 </div>
             </section>
 
+            <section>
+                <span class="background dark" style="background-image:url('public/assets/reconcile_pseudo_code.png')"></span>
+            </section>
+
+            <section class="slide">
+                <div class="wrap">
+                    <div class="grid vertical-align">
+                        <div class="column">
+                            <pre class="language-yaml"><code>---
+apiVersion: ec2.services.k8s.aws/v1alpha1
+kind: ElasticIPAddress
+metadata:
+    name: my-elastic-ip
+spec: {}
+status: {}
+                            </code></pre>
+                        </div>
+                        <div class="column">
+                            <pre class="language-yaml"><code>---
+apiVersion: ec2.services.k8s.aws/v1alpha1
+kind: ElasticIPAddress
+metadata:
+    name: my-elastic-ip
+spec: {}
+status:
+    allocationID: eipalloc-1234567890abcdef0
+    publicIP: 3.5.6.7
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- END -->
             <section class="slide-bottom">
                 <div class="wrap">
