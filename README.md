@@ -35,3 +35,12 @@ All traffic is encrypted in transit and we remain in control of certificates and
 [OperatorSDK](https://sdk.operatorframework.io/) is a toolkit that allows you to manage Kubernetes operators. We have built an operator
 to manage the server using Kubernetes Custom Resources. By using this approach, we can manage the bulk of the configuration using tools
 like ArgoCD and the operator will handle the configuration of the FRP server.
+
+### AWS Controllers for Kubernetes
+
+[AWS Controllers for Kubernetes](https://aws.amazon.com/blogs/containers/aws-controllers-for-kubernetes-ack/) is a project that allows
+you to manage AWS resources using Kubernetes Custom Resources. We can use this to provision Elastic IPs for example.
+
+### Demo
+
+We will show a demo of the FRP server running on AWS and a client connecting to it from my local machine.
